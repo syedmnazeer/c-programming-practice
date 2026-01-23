@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    int multiply, subtract;
+    float divide;
+
+    printf("Enter two whole numbers: ");
+    scanf("%d %d", &a, &b);
+
+    multiply = a * b;
+    subtract = a - b;
+    divide = (float)a / b;   // type casting for correct division
+
+    printf("Multiplication = %d\n", multiply);
+    printf("Subtraction = %d\n", subtract);
+    printf("Division = %.2f\n", divide);
+
+    return 0;
+}
